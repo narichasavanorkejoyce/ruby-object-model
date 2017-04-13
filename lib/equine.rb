@@ -1,11 +1,19 @@
+module Ridable
+  def ride
+    # puts 'I learned how to ride!'
+  end
+end
+
 class Equine
 end
 
-class Horse
+class Horse < Equine
+  include Ridable
 end
 
-class Mule
+class Mule < Equine
+  include Ridable
 end
 
-class Zebra
+class Zebra < Equine
 end
